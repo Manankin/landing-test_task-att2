@@ -1,0 +1,15 @@
+@import './mixins.scss';
+
+.front-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+//   background-image: url('./images/front-image/front-image-1x-XL.webp');
+
+//   @include retina-display {
+//     background-image: url('./images/front-image/front-image-2x-XL.webp');
+//   }
+}

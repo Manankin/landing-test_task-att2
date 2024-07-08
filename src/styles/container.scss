@@ -1,0 +1,63 @@
+.container {
+  position: relative;
+  height: 100vh;
+  background-color: #000055;
+  overflow: hidden;
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background: linear-gradient(213deg, rgba(0, 0, 85, 0.8) 39.94%, rgba(255, 38, 126, 0.8) 93.3%), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2); 
+  }
+
+  &__night-sky {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+
+  &__logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    overflow: hidden;
+
+    width: 474px;
+    height: 154px;
+  }
+
+  &__content {
+    margin-right: 62px;
+    margin-left: auto;
+    width: fit-content;
+    height: 100%;
+    z-index: 25;
+  }
+
+  &__front-image {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  &__salutes,
+  &__spotlights {
+    position: relative;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}

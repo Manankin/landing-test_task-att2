@@ -1,0 +1,23 @@
+@import './mixins.scss';
+
+.logo {
+  &__logo {
+    background-image: url('./images/logo.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 474px;
+    height: 84px;
+  }
+
+  &__group {
+    width: 208px;
+    height: 70px;
+    box-sizing: border-box;
+    background-color: #000055;
+    border: 1px solid #FF267E;
+    background-image: url('./images/group.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 166px 28px;
+  }
+}

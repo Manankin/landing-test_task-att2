@@ -1,0 +1,20 @@
+@mixin retina-display {
+  @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+       @content;
+    }
+}
+
+@mixin on-desktop-L {
+  @media (max-width: 1920px) {
+    @content;
+  }
+}
+
+@mixin on-desktop-S {
+  @media (max-width: 1365px) {
+    @content;
+  }
+}

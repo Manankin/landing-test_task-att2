@@ -1,0 +1,18 @@
+@import './mixins.scss';
+
+.button {
+  // display: inline-block;
+  background-color: #05c489;
+  border-radius: 5px;
+  padding: 30px 65px;
+  width: fit-content;
+  font-size: 24px;
+  line-height: 24px;
+  color:  #00003d;
+  text-transform: uppercase;
+  // box-sizing: border-box;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}

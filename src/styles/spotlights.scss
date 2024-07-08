@@ -1,0 +1,100 @@
+@import './mixins.scss';
+
+.spotlights {
+  position: absolute;
+
+  &__1 {
+    display: block;
+    position: absolute;
+    z-index: 3;
+
+    background-image: url('./images/spotlights/spotlights-R.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 770px;
+    height: 550px;
+
+    // left: 385px;
+    left: 12.5vw;
+    // bottom: 560px;
+    bottom: 49.5vh;
+
+    transform-origin: left bottom;
+    animation-name: spotlight-move;
+    animation-duration: 3000ms;
+    // animation-delay: 1000ms;
+    animation-iteration-count: infinite;
+  }
+
+  &__2 {
+    display: block;
+    position: absolute;
+    z-index: 3;
+
+    background-image: url('./images/spotlights/spotlights-L.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 970px;
+    height: 970px;
+
+    // left: 385px;
+    left: -34.5vw;
+    // bottom: 560px;
+    bottom: 58.5vh;
+
+    transform-origin: right bottom;
+    animation-name: spotlight-move;
+    animation-duration: 3500ms;
+    // animation-delay: 1000ms;
+    animation-iteration-count: infinite;
+  }
+
+  &__3 {
+    display: block;
+    position: absolute;
+    z-index: 3;
+
+    background-image: url('./images/spotlights/spotlights-R.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 770px;
+    height: 550px;
+
+    // left: 385px;
+    left: 55.5vw;
+    // bottom: 560px;
+    bottom: -10.5vh;
+
+    transform-origin: left bottom;
+    animation-name: spotlight-move;
+    animation-duration: 4000ms;
+    // animation-delay: 1000ms;
+    animation-iteration-count: infinite;
+
+  }
+}
+
+@keyframes spotlight-move {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-2.5deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(2.5deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}

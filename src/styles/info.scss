@@ -1,0 +1,29 @@
+@import './mixins.scss';
+
+.info {
+  display: flex;
+  gap: 33px;
+  align-items: center;
+
+  color: #e8e8e8;
+  font-size: 32px;
+  line-height: 40px;
+  text-transform: uppercase;
+  letter-spacing: 0.03;
+
+  &__plus-icon {
+    background-image: url('./images/pink-white-plus.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 62px;
+    height: 51px;
+  }
+
+  &__left-side {
+    text-align: center;
+  }
+
+  &__right-side {
+    text-align: center;
+  }
+}

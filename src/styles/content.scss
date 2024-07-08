@@ -1,0 +1,83 @@
+@import './mixins.scss';
+
+@font-face {
+  font-family: 'SuisseItl-Regular';
+  src: url('./fonts/SuisseIntl-Regular.woff');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'SuisseIntl-SemiBold';
+  src: url('./fonts/SuisseIntl-SemiBold.woff');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'WulkanDisplay-SemiBoldItalic';
+  src: url('./fonts/WulkanDisplay-SemiBoldItalic.woff');
+}
+
+.content {
+  position: relative;
+  padding-top: 99px;
+  box-sizing: border-box;
+  font-family: 'SuisseItl-Regular';
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 25;
+
+  color: #fff;
+
+  &__title {
+    background-color: #ff267e;
+    font-size: 58px;
+    line-height: 70px;
+    text-transform: uppercase;
+    letter-spacing: 0.03;
+    padding: 5px 25px;
+
+    &>span {
+      font-family: 'WulkanDisplay-SemiBoldItalic';
+    }
+  }
+
+  &__bonus {
+    font-family: 'SuisseIntl-SemiBold';
+    margin-top: 38px;
+    text-align: center;
+    font-size: 77px;
+    line-height: 100px;
+    text-transform: uppercase;
+    color:  #e8e8e8;
+    letter-spacing: 0.03;
+
+    &>span {
+      font-family: 'WulkanDisplay-SemiBoldItalic';
+      color: #ff267e;
+    }
+  }
+
+  &__info {
+    font-family: 'SuisseIntl-SemiBold';
+    margin-top: 28px;
+    align-self: flex-end;
+    margin-right: 16px;
+
+  }
+
+  &__button {
+    font-family: 'SuisseIntl-SemiBold';
+    margin-top: 38px;
+  }
+
+  &__footer {
+    align-self: flex-end;
+    margin-top: auto;
+    margin-bottom: 18px;
+    margin-right: -38px;
+
+    font-family: 'SuisseItl-Regular';
+  }
+}
