@@ -7,9 +7,23 @@
   right: 0;
   bottom: 0;
   z-index: 5;
-//   background-image: url('./images/front-image/front-image-1x-XL.webp');
+  max-width: 100%;
+  height: auto;
 
-//   @include retina-display {
-//     background-image: url('./images/front-image/front-image-2x-XL.webp');
-//   }
+  background-image: url('./images/front-image/front-image-1x-XL.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include retina-display {
+    background-image: url('./images/front-image/front-image-2x-XL.webp');
+  }
+
+  @include on-desktop-L {
+    background-image: url('./images/front-image/front-image-1x-L.webp');
+
+    @include retina-display {
+      background-image: url('./images/front-image/front-image-2x-L.webp');
+    }
+  }
 }

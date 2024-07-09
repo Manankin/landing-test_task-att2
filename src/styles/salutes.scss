@@ -2,7 +2,6 @@
 
 .salutes {
   position: absolute;
-  opacity: 0;
 
   &__1 {
     display: block;
@@ -10,14 +9,26 @@
     background-image: url('./images/salutes/salute1-XL.svg');
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 
     width: 495px;
     height: 505px;
-
     top: 15.5vh;
     // top: 168px;
     left: 23.5vw;
     // left: 452px;
+
+    @include on-desktop-L {
+      width: 352px;
+      height: 359px;
+      left: 322px;
+      top: 120px;
+    }
+
+    opacity: 0;
+    @include salute {
+      animation-duration: 5000ms;
+    }
   }
 
   &__2 {
@@ -29,31 +40,50 @@
 
     width: 445px;
     height: 454px;
-
     top: 46.5vh;
     // top: 502px;
     left: 42.5vw;
     // left: 818px;
+
+    @include on-desktop-L {
+      width: 317px;
+      height: 323px;
+      left: 580px;
+      top: 350px;
+    }
+
+    opacity: 0;
+    @include salute {
+      animation-duration: 4500ms;
+    }
   }
 
   &__3 {
     display: block;
     position: absolute;
     background-image: url('./images/salutes/salute5.svg');
-    // background-image: url('./images/salutes/salute1-XL.svg');
-    // background-image: url('./images/salutes/salute1-1x-XL.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    // transform-origin: 50% 50%;
 
     width: 344px;
     height: 351px;
-
     // bottom: -22px;
     bottom: -2vh;
     // right: 119px;
     right: 6vw;
+
+    @include on-desktop-L {
+      width: 245px;
+      height: 250px;
+      right: 85px;
+      top: 534px;
+    }
+
+    opacity: 0;
+    @include salute {
+      animation-duration: 4000ms;
+    }
   }
 
   &__4 {
@@ -65,29 +95,19 @@
 
     width: 268px;
     height: 268px;
-
     bottom: 104px;
-    right: 0;
-  }
+    right: -2vw;
+    
+    @include on-desktop-L {
+      width: 191px;
+      height: 191px;
+      top: 503px;
+      right: -23px;
+    }
 
-  animation-name: explosion;
-  animation-duration: 5000ms;
-  animation-fill-mode: forwards;
-  animation-delay: 1000ms;
-}
-
-
-@keyframes explosion {
-  0% {
     opacity: 0;
-  }
-
-  50% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 1;
-    transform: scale(1.1);
+    @include salute {
+      animation-duration: 4500ms;
+    }
   }
 }

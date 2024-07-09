@@ -5,8 +5,14 @@
     background-image: url('./images/logo.svg');
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     width: 474px;
     height: 84px;
+
+    @include on-desktop-L {
+      width: 339px;
+      height: 60px;
+    }
   }
 
   &__group {
@@ -19,5 +25,11 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 166px 28px;
+    
+    @include on-desktop-L {
+      background-size: 119px 21px;
+      width: 149px;
+      height: 50px;
+    }
   }
 }

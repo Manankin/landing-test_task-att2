@@ -12,6 +12,10 @@
     right: 0;
     z-index: 1;
     background: linear-gradient(213deg, rgba(0, 0, 85, 0.8) 39.94%, rgba(255, 38, 126, 0.8) 93.3%), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2); 
+  
+    @include on-desktop-L {
+      background: linear-gradient(213deg, rgba(0, 0, 85, 0.8) 39.94%, rgba(255, 38, 126, 0.8) 93.3%);
+    }
   }
 
   &__night-sky {
@@ -40,6 +44,10 @@
     width: fit-content;
     height: 100%;
     z-index: 25;
+
+    @include on-desktop-L {
+      margin-right: 64px;
+    }
   }
 
   &__front-image {

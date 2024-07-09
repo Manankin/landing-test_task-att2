@@ -12,6 +12,11 @@
   text-transform: uppercase;
   // box-sizing: border-box;
 
+  @include on-desktop-L {
+    font-size: 18px;
+    padding: 21px 38px;
+  }
+
   &:hover {
     opacity: 0.7;
   }

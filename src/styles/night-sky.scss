@@ -7,5 +7,15 @@
   right: 0;
   bottom: 0;
   z-index: 2;
-  background-image: url('./images/night-sky/night-sky.svg');
+  background-image: url('./images/night-sky/night-sky-XL.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include on-desktop-L {
+    background-image: url('./images/night-sky/night-sky-1x-L.webp');
+
+    @include retina-display {
+      background-image: url('./images/night-sky/night-sky-2x-L.webp');
+    }
+  }
 }

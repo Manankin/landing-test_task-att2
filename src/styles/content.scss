@@ -30,6 +30,10 @@
 
   color: #fff;
 
+  @include on-desktop-L {
+    padding-top: 88px;
+  }
+
   &__title {
     background-color: #ff267e;
     font-size: 58px;
@@ -37,6 +41,12 @@
     text-transform: uppercase;
     letter-spacing: 0.03;
     padding: 5px 25px;
+
+    @include on-desktop-L {
+      font-size: 42px;
+      line-height: 52px;
+      padding: 4px 14px;
+    }
 
     &>span {
       font-family: 'WulkanDisplay-SemiBoldItalic';
@@ -53,6 +63,12 @@
     color:  #e8e8e8;
     letter-spacing: 0.03;
 
+    @include on-desktop-L {
+      margin-top: 23px;
+      font-size: 55px;
+      line-height: 71px;
+    }
+
     &>span {
       font-family: 'WulkanDisplay-SemiBoldItalic';
       color: #ff267e;
@@ -65,11 +81,18 @@
     align-self: flex-end;
     margin-right: 16px;
 
+    @include on-desktop-L {
+      margin-top: 21px;
+    }
   }
 
   &__button {
     font-family: 'SuisseIntl-SemiBold';
     margin-top: 38px;
+
+    @include on-desktop-L {
+      margin-top: 25px;
+    }
   }
 
   &__footer {
@@ -79,5 +102,10 @@
     margin-right: -38px;
 
     font-family: 'SuisseItl-Regular';
+
+    @include on-desktop-L {
+      margin-bottom: 11px;
+      margin-right: -40px;
+    }
   }
 }

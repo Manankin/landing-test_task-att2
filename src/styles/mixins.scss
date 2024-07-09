@@ -18,3 +18,54 @@
     @content;
   }
 }
+
+@mixin salute {
+  animation-name: explosion;
+  animation-fill-mode: forwards;
+  animation-delay: 1000ms;
+  @content;
+
+  @keyframes explosion {
+    0% {
+      opacity: 0;
+    }
+
+    75% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+  }
+}
+
+@mixin spotlight {
+  animation-name: spotlight-move;
+  animation-iteration-count: infinite;
+  @content;
+
+
+  @keyframes spotlight-move {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    25% {
+      transform: rotate(-2.5deg);
+    }
+
+    50% {
+      transform: rotate(0deg);
+    }
+
+    75% {
+      transform: rotate(2.5deg);
+    }
+
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+}

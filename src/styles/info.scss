@@ -11,12 +11,22 @@
   text-transform: uppercase;
   letter-spacing: 0.03;
 
+  @include on-desktop-L {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
   &__plus-icon {
     background-image: url('./images/pink-white-plus.svg');
     background-repeat: no-repeat;
     background-position: center;
     width: 62px;
     height: 51px;
+
+    @include on-desktop-L {
+      width: 44px;
+      height: 36px;
+    }
   }
 
   &__left-side {

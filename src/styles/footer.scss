@@ -6,17 +6,30 @@
   align-items: center;
   justify-content: end;
 
+  @include on-desktop-L {
+    gap: 14px;
+  }
+
   &__text {
     text-align: end;
     font-size: 11px;
     line-height: 13px;
     color: #e8e8e8;
     letter-spacing: 0.02;
+
+    @include on-desktop-L {
+      font-size: 10px;
+      line-height: 12px;
+    }
   }
 
   &__icons {
     display: flex;
     gap: 18px;
+
+    @include on-desktop-L {
+      gap: 16px;
+    }
 
     &--18plus {
       background-image: url('./images/18plus.svg');
@@ -24,14 +37,25 @@
       background-position: center;
       width: 52px;
       height: 50px;
+
+      @include on-desktop-L {
+        width: 44px;
+        height: 42px;
+      }
     }
 
     &--onjn {
       background-image: url('./images/onjn.png');
       background-repeat: no-repeat;
       background-position: center;
+      background-size: cover;
       width: 52px;
       height: 50px;
+      
+      @include on-desktop-L {
+        width: 44px;
+        height: 42px;
+      }
     }
   }
 }
