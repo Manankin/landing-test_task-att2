@@ -2,7 +2,7 @@
 
 .info {
   display: flex;
-  gap: 33px;
+  gap: 34px;
   align-items: center;
 
   color: #e8e8e8;
@@ -14,6 +14,17 @@
   @include on-desktop-L {
     font-size: 22px;
     line-height: 28px;
+    gap: 26px;
+  }
+
+  @include on-desktop-S {
+    font-size: 20px;
+    line-height: 25px;
+    gap: 22px;
+  }
+
+  @include iPad-mini {
+    gap: 24px;
   }
 
   &__plus-icon {
@@ -27,13 +38,26 @@
       width: 44px;
       height: 36px;
     }
+
+    @include on-desktop-S {
+      width: 40px;
+      height: 34px;
+    }
   }
 
   &__left-side {
     text-align: center;
+
+    @include iPad-mini {
+      text-align: center;
+    }
   }
 
   &__right-side {
     text-align: center;
+
+    @include iPad-mini {
+      text-align: right;
+    }
   }
 }

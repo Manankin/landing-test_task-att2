@@ -18,4 +18,20 @@
       background-image: url('./images/night-sky/night-sky-2x-L.webp');
     }
   }
+
+  @include on-desktop-S {
+    background-image: url('./images/night-sky/night-sky-1x-S.webp');
+
+    @include retina-display {
+      background-image: url('./images/night-sky/night-sky-2x-S.webp');
+    }
+  }
+
+  @include iPad-mini {
+    background-image: url('./images/night-sky/night-sky-1x-iPad.webp');
+
+    @include retina-display {
+      background-image: url('./images/night-sky/night-sky-2x-iPad.webp');
+    }
+  }
 }

@@ -13,6 +13,16 @@
       width: 339px;
       height: 60px;
     }
+
+    @include on-desktop-S {
+      width: 309px;
+      height: 55px;
+    }
+
+    @include iPad-mini {
+      width: 278px;
+      height: 50px;
+    }
   }
 
   &__group {
@@ -30,6 +40,18 @@
       background-size: 119px 21px;
       width: 149px;
       height: 50px;
+    }
+
+    @include on-desktop-S {
+      background-size: 108px 19px;
+      width: 136px;
+      height: 46px;
+    }
+
+    @include iPad-mini {
+      background-size: 97px 17px;
+      width: 122px;
+      height: 42px;
     }
   }
 }

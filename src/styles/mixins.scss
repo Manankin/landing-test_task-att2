@@ -19,6 +19,12 @@
   }
 }
 
+@mixin iPad-mini {
+  @media (max-width: 1023px) and (orientation: portrait) {
+    @content;
+  }
+}
+
 @mixin salute {
   animation-name: explosion;
   animation-fill-mode: forwards;

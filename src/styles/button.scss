@@ -7,14 +7,22 @@
   padding: 30px 65px;
   width: fit-content;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 30px;
   color:  #00003d;
   text-transform: uppercase;
+  letter-spacing: 0.08;
   // box-sizing: border-box;
 
   @include on-desktop-L {
     font-size: 18px;
-    padding: 21px 38px;
+    line-height: 23px;
+    padding: 21px 50px;
+  }
+
+  @include on-desktop-S {
+    font-size: 16px;
+    padding: 20px 47px;
+    line-height: 21px;
   }
 
   &:hover {
