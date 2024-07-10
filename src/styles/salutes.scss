@@ -25,6 +25,20 @@
       top: 120px;
     }
 
+    @include tablet {
+      width: 157px;
+      height: 160px;
+      left: -55px;
+      top: 260px;
+    }
+
+    @include mobile {
+      width: 135px;
+      height: 137px;
+      left: -41px;
+      top: 244px;
+    }
+
     opacity: 0;
     @include salute {
       animation-duration: 5000ms;
@@ -50,6 +64,20 @@
       height: 323px;
       left: 580px;
       top: 350px;
+    }
+
+    @include tablet {
+      width: 200px;
+      height: 240px;
+      bottom: 185px;
+      left: 178px;
+    }
+
+    @include mobile {
+      width: 170px;
+      height: 174px;
+      top: 355px;
+      left: 168px;
     }
 
     opacity: 0;
@@ -80,6 +108,10 @@
       top: 534px;
     }
 
+    @include tablet {
+      display: none;
+    }
+
     opacity: 0;
     @include salute {
       animation-duration: 4000ms;
@@ -103,6 +135,10 @@
       height: 191px;
       top: 503px;
       right: -23px;
+    }
+
+    @include tablet {
+      display: none;
     }
 
     opacity: 0;
