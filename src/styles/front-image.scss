@@ -22,23 +22,23 @@
   @include on-desktop-L {
     background-image: url('./images/front-image/front-image-1x-L.webp');
 
-    @include retina-display {
-      background-image: url('./images/front-image/front-image-2x-L.webp');
-    }
+    // @include retina-display {
+    //   background-image: url('./images/front-image/front-image-2x-L.webp');
+    // }
   }
 
   @include on-desktop-S {
     background-image: url('./images/front-image/front-image-1x-S.webp');
 
-    @include retina-display {
-      background-image: url('./images/front-image/front-image-2x-S.webp');
-    }
+    // @include retina-display {
+    //   background-image: url('./images/front-image/front-image-2x-S.webp');
+    // }
   }
 
   @include iPad-mini {
     background-image: url('./images/front-image/front-image-1x-iPad.webp');
     width: 100%;
-      height: auto;
+    height: auto;
 
     // @include retina-display {
     //   background-image: url('./images/front-image/front-image-2x-iPad.webp');
@@ -47,5 +47,8 @@
     // }
   }
 
-
+  @include tablet {
+    background-image: url('./images/front-image/front-image-1x-Tablet.webp');
+    bottom: 84px;
+  }
 }

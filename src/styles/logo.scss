@@ -23,6 +23,11 @@
       width: 278px;
       height: 50px;
     }
+
+    @include tablet {
+      width: 195px;
+      height: 33px;
+    }
   }
 
   &__group {
@@ -52,6 +57,12 @@
       background-size: 97px 17px;
       width: 122px;
       height: 42px;
+    }
+
+    @include tablet {
+      background-size: 65px 12px;
+      width: 81px;
+      height: 28px;
     }
   }
 }

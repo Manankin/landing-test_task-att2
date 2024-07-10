@@ -40,7 +40,13 @@
   }
 
   @include iPad-mini {
+    padding-top: 80px;
     padding-top: 86px;
+  }
+
+  @include tablet {
+    padding-inline: 12px;
+    align-items: center;
   }
 
   &__title {
@@ -61,6 +67,12 @@
       font-size: 38px;
       line-height: 58px;
       padding: 0 13px;
+    }
+
+    @include tablet {
+      font-size: 23px;
+      line-height: 32px;
+      padding: 0 11px;
     }
 
     &>span {
@@ -91,6 +103,13 @@
       text-align: right;
     }
 
+    @include tablet {
+      margin-top: 14px;
+      font-size: 39px;
+      line-height: 49px;
+      text-align: center;
+    }
+
     &>span {
       font-family: 'WulkanDisplay-SemiBoldItalic';
       color: #ff267e;
@@ -115,11 +134,18 @@
     @include iPad-mini {
       margin-right: -7px;
     }
+
+    @include tablet {
+      margin-top: 12px;
+      margin-right: 0;
+      align-self: center;
+    }
   }
 
   &__button {
     font-family: 'SuisseIntl-SemiBold';
     margin-top: 38px;
+    box-sizing: border-box;
 
     @include on-desktop-L {
       margin-top: 25px;
@@ -127,6 +153,12 @@
 
     @include on-desktop-S {
       margin-top: 24px;
+    }
+
+    @include tablet {
+      order: 5;
+      margin-bottom: 16px;
+      margin-top: 0;
     }
   }
 
@@ -152,6 +184,12 @@
       margin-right: auto;
       margin-left: 15px;
       margin-bottom: 9px;
+    }
+
+    @include tablet {
+      // margin-left: 0;
+      margin-bottom: 24px;
+      margin-left: -4px;
     }
   }
 }

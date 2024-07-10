@@ -11,6 +11,17 @@
   color:  #00003d;
   text-transform: uppercase;
   letter-spacing: 0.08;
+
+  position: relative;
+
+  &--top {
+    position: absolute;
+    height: 2px;
+    left: 0;
+    right: -100%;
+  }
+
+  cursor: pointer;
   // box-sizing: border-box;
 
   @include on-desktop-L {
@@ -23,6 +34,12 @@
     font-size: 16px;
     padding: 20px 47px;
     line-height: 21px;
+  }
+
+  @include tablet {
+    font-size: 18px;
+    line-height: 23px;
+    padding: 15px 76px;
   }
 
   &:hover {

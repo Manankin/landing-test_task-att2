@@ -34,4 +34,12 @@
       background-image: url('./images/night-sky/night-sky-2x-iPad.webp');
     }
   }
+
+  @include tablet {
+    background-image: url('./images/night-sky/night-sky-1x-Tablet.webp');
+
+    @include retina-display {
+      background-image: url('./images/night-sky/night-sky-2x-Tablet.webp');
+    }
+  }
 }

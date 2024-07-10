@@ -16,6 +16,10 @@
     align-items: flex-start;
   }
 
+  @include tablet {
+    gap: 5px;
+  }
+
   &__text {
     text-align: end;
     font-size: 11px;
@@ -30,6 +34,11 @@
 
     @include iPad-mini {
       text-align: left;
+    }
+
+    @include tablet {
+      font-size: 7px;
+      line-height: 8.5px;
     }
   }
 
@@ -46,6 +55,10 @@
       gap: 10px;
     }
 
+    @include tablet {
+      gap: 7px;
+    }
+
     &--18plus {
       background-image: url('./images/18plus.svg');
       background-repeat: no-repeat;
@@ -56,6 +69,11 @@
       @include on-desktop-L {
         width: 45px;
         height: 42px;
+      }
+
+      @include tablet {
+        width: 31px;
+        height: 30px;
       }
     }
 
@@ -70,6 +88,11 @@
       @include on-desktop-L {
         width: 45px;
         height: 42px;
+      }
+
+      @include tablet {
+        width: 31px;
+        height: 30px;
       }
     }
   }

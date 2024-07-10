@@ -27,6 +27,12 @@
     gap: 24px;
   }
 
+  @include tablet {
+    font-size: 18px;
+    line-height: 24px;
+    gap: 17px;
+  }
+
   &__plus-icon {
     background-image: url('./images/pink-white-plus.svg');
     background-repeat: no-repeat;
@@ -43,6 +49,11 @@
       width: 40px;
       height: 34px;
     }
+
+    @include tablet {
+      width: 35px;
+      height: 28px;
+    }
   }
 
   &__left-side {
@@ -58,6 +69,10 @@
 
     @include iPad-mini {
       text-align: right;
+    }
+
+    @include tablet {
+      text-align: center;
     }
   }
 }
