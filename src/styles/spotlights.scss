@@ -26,12 +26,20 @@
       width: 644px;
       height: 644px;
     }
+
+    @include iPad-mini {
+      background-image: url('./images/spotlights/spot-to-right-1-iPad.svg');
+      // width: 350px;
+      // height: 645px;
+      bottom: 405px;
+      left: 95px;
+    }
     
     @include tablet {
       display: none;
     }
 
-    transform-origin: left center;
+    transform-origin: 20% 70%;
     @include spotlight {
       animation-duration: 3000ms;
     }
@@ -60,6 +68,12 @@
       height: 696px;
       bottom: 270px;
       left: -55px;
+    }
+
+    @include iPad-mini {
+      background-image: url('./images/spotlights/spo-to-left-iPad.svg');
+      top: -25px;
+      left: -25px;
     }
 
     @include tablet {
@@ -96,6 +110,14 @@
       height: 503px;
       bottom: -13.5vh;
       left: 52.5vw;
+    }
+
+    @include iPad-mini {
+      background-image: url('./images/spotlights/spot-to-right-iPad.svg');
+      width: 335px;
+      height: 617px;
+      top: 172px;
+      left: 389px;
     }
 
     @include tablet {
