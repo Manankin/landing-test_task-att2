@@ -42,4 +42,12 @@
       background-image: url('./images/night-sky/night-sky-2x-Tablet.webp');
     }
   }
+
+  @include mobile {
+    background-image: url('./images/night-sky/night-sky-1x-Mobile.webp');
+
+    @include retina-display {
+      background-image: url('./images/night-sky/night-sky-2x-Mobile.webp');
+    }
+  }
 }

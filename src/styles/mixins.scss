@@ -31,6 +31,12 @@
   }
 }
 
+@mixin mobile {
+  @media (max-width: 374px) and (orientation: portrait) {
+    @content;
+  }
+}
+
 @mixin salute {
   animation-name: explosion;
   animation-fill-mode: forwards;

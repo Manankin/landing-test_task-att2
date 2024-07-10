@@ -51,4 +51,9 @@
     background-image: url('./images/front-image/front-image-1x-Tablet.webp');
     bottom: 84px;
   }
+
+  @include mobile {
+    background-image: url('./images/front-image/front-image-1x-Mobile.webp');
+    bottom: 76px;
+  }
 }

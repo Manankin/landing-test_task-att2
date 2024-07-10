@@ -30,6 +30,11 @@
       transform: scaleX(-1);
       bottom: 92px;
     }
+
+    @include mobile {
+      background: linear-gradient(147deg, rgba(0, 0, 85, 0.8) 26.65%, rgba(255, 38, 126, 0.8) 100%);
+      bottom: 76px;
+    }
   }
 
   &__night-sky {
@@ -47,9 +52,6 @@
     left: 0;
     z-index: 10;
     overflow: hidden;
-
-    // width: 474px;
-    // height: 154px;
   }
 
   &__content {

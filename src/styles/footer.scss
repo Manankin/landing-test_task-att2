@@ -20,6 +20,10 @@
     gap: 5px;
   }
 
+  @include mobile {
+    gap: 4px;
+  }
+
   &__text {
     text-align: end;
     font-size: 11px;
@@ -40,6 +44,11 @@
       font-size: 7px;
       line-height: 8.5px;
     }
+
+    @include mobile {
+      font-size: 6px;
+      line-height: 7.2px;
+    }
   }
 
   &__icons {
@@ -59,6 +68,10 @@
       gap: 7px;
     }
 
+    @include mobile {
+      gap: 6px;
+    }
+
     &--18plus {
       background-image: url('./images/18plus.svg');
       background-repeat: no-repeat;
@@ -74,6 +87,11 @@
       @include tablet {
         width: 31px;
         height: 30px;
+      }
+
+      @include mobile {
+        width: 27px;
+        height: 26px;
       }
     }
 
@@ -93,6 +111,11 @@
       @include tablet {
         width: 31px;
         height: 30px;
+      }
+
+      @include mobile {
+        width: 27px;
+        height: 26px;
       }
     }
   }

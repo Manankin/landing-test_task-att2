@@ -28,6 +28,11 @@
       width: 195px;
       height: 33px;
     }
+
+    @include mobile {
+      width: 158px;
+      height: 29px;
+    }
   }
 
   &__group {
@@ -63,6 +68,12 @@
       background-size: 65px 12px;
       width: 81px;
       height: 28px;
+    }
+
+    @include mobile {
+      width: 70px;
+      height: 25px;
+      background-size: 56px 10px;
     }
   }
 }

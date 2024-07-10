@@ -33,6 +33,12 @@
     gap: 17px;
   }
 
+  @include mobile {
+    gap: 14px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
   &__plus-icon {
     background-image: url('./images/pink-white-plus.svg');
     background-repeat: no-repeat;
@@ -53,6 +59,11 @@
     @include tablet {
       width: 35px;
       height: 28px;
+    }
+
+    @include mobile {
+      width: 30px;
+      height: 25px;
     }
   }
 
