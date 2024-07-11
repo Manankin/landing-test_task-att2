@@ -13,12 +13,10 @@
     background-position: center;
     background-size: cover;
 
-    // width: 770px;
-    // height: 550px;
-    // left: 385px;
-    left: 12.5vw;
-    // bottom: 560px;
-    bottom: 49.5vh;
+    width: 770px;
+    height: 550px;
+    left: 240px;
+    bottom: 535px;
 
     @include on-desktop-L {
       left: 9vw;
@@ -43,7 +41,7 @@
       // width: 350px;
       // height: 645px;
       bottom: 405px;
-      left: 95px;
+      left: 35px;
     }
     
     @include tablet {
@@ -61,24 +59,20 @@
     position: absolute;
     z-index: 3;
 
-    background-image: url('./images/spotlights/spotlights-L.svg');
+    background-image: url('./images/spotlights/spot-to-left-S.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
-    width: 970px;
-    height: 970px;
-    // left: 385px;
-    left: -34.5vw;
-    // bottom: 560px;
-    bottom: 58.5vh;
+    width: 446px;
+    height: 503px;
+    left: -12px;
+    top: -66px;
 
     @include on-desktop-L {
-      background-image: url('./images/spotlights/left.svg');
-      width: 376px;
-      height: 696px;
-      bottom: 270px;
-      left: -55px;
+      background-image: url('./images/spotlights/spot-to-left-L.svg');
+      left: -70px;
+      top: -78px;
     }
 
     @include on-desktop-S {
@@ -91,7 +85,7 @@
 
     @include iPad-mini {
       background-image: url('./images/spotlights/spo-to-left-iPad.svg');
-      top: -25px;
+      top: 80px;
       left: -25px;
     }
 
@@ -110,8 +104,7 @@
     position: absolute;
     z-index: 3;
 
-    // background-image: url('./images/spotlights/spotlights-R.svg');
-    background-image: url('./images/spotlights/spot-to-right.svg');
+    background-image: url('./images/spotlights/spotlights-R.svg'  );
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -148,8 +141,8 @@
     }
 
     @include tablet {
-      bottom: 250px;
-      left: -10px;
+      top: -95px;
+      left: 25px;
     }
 
     @include mobile {

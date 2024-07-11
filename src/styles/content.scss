@@ -51,6 +51,7 @@
 
   @include mobile {
     padding-inline: 11px;
+    padding-top: 68px;
   }
 
   &__title {
@@ -123,6 +124,7 @@
     @include mobile {
       font-size: 33px;
       line-height: 40px;
+      margin-top: 12px;
     }
 
     &>span {
@@ -157,7 +159,7 @@
     }
 
     @include mobile {
-
+      margin-top: 8px;
     }
   }
 
