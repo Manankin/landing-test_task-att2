@@ -13,8 +13,8 @@
     background-position: center;
     background-size: cover;
 
-    width: 770px;
-    height: 550px;
+    // width: 770px;
+    // height: 550px;
     // left: 385px;
     left: 12.5vw;
     // bottom: 560px;
@@ -25,6 +25,17 @@
       bottom: 28vh;
       width: 644px;
       height: 644px;
+    }
+
+    @include on-desktop-S {
+      background-image: url('./images/spotlights/spo-to-right-S.svg');
+      // bottom: 38vh;
+      bottom: 307px;
+      // left: 14vw;
+      left: 181px;
+      transform: scale(0.6);
+      width: 705px;
+      height: 558px;
     }
 
     @include iPad-mini {
@@ -70,6 +81,14 @@
       left: -55px;
     }
 
+    @include on-desktop-S {
+      background-image: url('./images/spotlights/spot-to-left-S.svg');
+      width: 284px;
+      height: 387px;
+      top: 0;
+      left: 0;
+    }
+
     @include iPad-mini {
       background-image: url('./images/spotlights/spo-to-left-iPad.svg');
       top: -25px;
@@ -110,6 +129,14 @@
       height: 503px;
       bottom: -13.5vh;
       left: 52.5vw;
+    }
+
+    @include on-desktop-S {
+      background-image: url('./images/spotlights/spot-to-right2-S.svg');
+      width: 750px;
+      height: 600px;
+      bottom: 200px;
+      left: 500px;
     }
 
     @include iPad-mini {
